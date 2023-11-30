@@ -1,0 +1,111 @@
+Software:
+
+sudo apt update: Update de lijst met beschikbare software.
+sudo apt install net-tools: Installeer het netwerkgereedschap.
+ifconfig: Toon informatie over netwerkinterfaces.
+netstat -na: Toon netwerkstatistieken.
+sudo apt reinstall net-tools: Herinstalleer het netwerkgereedschap.
+sudo apt purge net-tools: Verwijder het netwerkgereedschap volledig.
+sudo apt upgrade: Upgrade alle geïnstalleerde software.
+sudo apt clean: Verwijder gedownloade installatiebestanden.
+sudo apt autoremove net-tools: Verwijder onnodige afhankelijkheden van het netwerkgereedschap.
+sudo apt-cache show ^net-tools$: Toon informatie over het netwerk gereedschap.
+sudo dpkg -i steam_latest.deb: Installeer Steam.
+sudo dpkg -l "net*": Toon geïnstalleerde pakketten die beginnen met "net".
+sudo dpkg -s screen: Toon informatie over het "screen"-pakket.
+
+Mappen:
+
+pwd: Toon het huidige pad.
+ls: Toon bestanden en mappen.
+ls -a: Toon alle bestanden en mappen, inclusief verborgen.
+ls -l: Toon gedetailleerde informatie over bestanden en mappen.
+ls -h: Toon bestandsgroottes in een leesbare indeling.
+ls -al: Toon alle bestanden en mappen met gedetailleerde informatie.
+ls -alh: Toon alle bestanden en mappen met gedetailleerde en leesbare informatie.
+cd ~: Ga naar de thuismap.
+mkdir Projecten: Maak een map met de naam "Projecten".
+cd Projecten: Ga naar de map "Projecten".
+mkdir Onnodig: Maak een map met de naam "Onnodig".
+rmdir Onnodig: Verwijder de map "Onnodig".
+cd /: Ga naar de hoofdmap.
+cd /home: Ga naar de map "home".
+cd ~: Ga naar de thuismap.
+cd ..: Ga één map omhoog.
+cd -: Ga terug naar het vorige pad.
+
+Bestanden:
+
+pwd: Toon het huidige pad.
+ls -al: Toon alle bestanden en mappen met gedetailleerde informatie.
+cd ~: Ga naar de thuismap.
+mkdir Scripts: Maak een map met de naam "Scripts".
+cd Scripts: Ga naar de map "Scripts".
+touch bash.sh: Maak een leeg bestand met de naam "bash.sh".
+nano bash.sh: Open het bestand "bash.sh" om te bewerken.
+cp bash.sh bash.sh.backup: Maak een kopie van "bash.sh" genaamd "bash.sh.backup".
+mv bash.sh.backup bash.sh.backup.yesterday: Hernoem "bash.sh.backup" naar "bash.sh.backup.yesterday".
+rm -f bash.sh.backup.yesterday: Verwijder het bestand "bash.sh.backup.yesterday".
+chmod +x bash: Maak het bestand "bash" uitvoerbaar.
+
+Tekstbestanden:
+
+cd ~: Ga naar de thuismap.
+touch README: Maak een leeg tekstbestand met de naam "README".
+echo "Mijn readme document" > README: Voeg de tekst "Mijn readme document" toe aan "README".
+cat README: Toon de inhoud van "README".
+echo "Regel 2" >> README: Voeg "Regel 2" toe aan "README".
+nano README: Bewerk "README" met de nano-editor.
+tail -f /var/log/syslog: Toon de laatste regels van het systeemlogbestand.
+grep "readme" README: Zoek naar de tekst "readme" in "README".
+echo "Eerste Regel" > README: Overschrijf "README" met de tekst "Eerste Regel".
+less /var/log/syslog: Toon de inhoud van het systeemlogbestand met paginaweergave.
+more /var/log/syslog: Toon de inhoud van het systeemlogbestand met paginaweergave.
+
+Gebruikers en groepen:
+
+sudo useradd -m -s /bin/bash johndoe: Maak de gebruiker "johndoe" aan met een thuismap en bash-shell.
+sudo userdel -r johndoe: Verwijder de gebruiker "johndoe" inclusief de thuismap.
+sudo groupadd developers: Maak de groep "developers" aan.
+tail /etc/group: Toon de inhoud van het groepsbestand.
+sudo usermod -aG developers johndoe: Voeg de gebruiker "johndoe" toe aan de groep "developers".
+sudo groupdel -f developers: Verwijder de groep "developers" (forceer).
+cat /etc/passwd: Toon de inhoud van het gebruikersbestand.
+
+Datum en tijd:
+
+date: Toon de huidige datum en tijd.
+timedatectl status: Toon de status van de systeemklok.
+sudo timedatectl set-timezone Europe/Amsterdam: Stel de tijdzone in op Europe/Amsterdam.
+timedatectl: Toon de instellingen van de systeemklok.
+
+
+Bash:
+
+sudo apt update  # Update de lijst met beschikbare software.
+sudo apt install net-tools  # Installeer het netwerkgereedschap.
+ifconfig  # Toon informatie over netwerkinterfaces.
+
+find /etc/passwd -name "passwd": Zoek het bestand "passwd" in de map /etc/.
+find / -name "pas*": Zoek bestanden met namen die beginnen met "pas" op het hele systeem.
+find /etc -size +1024k: Zoek bestanden groter dan 1024 kilobytes in de map /etc.
+find / -perm 777: Zoek bestanden met de permissie 777 op het hele systeem.
+grep /etc "*.conf": Zoek naar de tekst "/etc" in bestanden met de extensie ".conf".
+
+Processen:
+
+ps uax | more: Toon gedetailleerde informatie over alle processen in paginaweergave.
+ps fax: Toon een boomstructuur van alle processen.
+pkill -KILL bash: Stop alle processen met de naam "bash".
+
+Permissions:
+
+sudo apt update: Update de lijst met beschikbare software.
+sudo apt install net-tools: Installeer het netwerkgereedschap.
+ifconfig: Toon informatie over netwerkinterfaces.
+
+Pipes:
+
+sudo apt update: Update de lijst met beschikbare software.
+sudo apt install net-tools: Installeer het netwerkgereedschap.
+ifconfig: Toon informatie over netwerkinterfaces.
